@@ -3,7 +3,8 @@
 import sys
 import string
 
-words = sys.stdin.read().split()
+f1 = open("test.txt")
+words = f1.read().split()
 d = dict()
 for word in words:
 	t = word.translate(str.maketrans('','',string.punctuation)).upper()
